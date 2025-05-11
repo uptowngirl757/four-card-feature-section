@@ -96,4 +96,19 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
   }
+  .features__card {
+    grid-row: auto;
+  }
+  .features__card--supervisor {
+    grid-row: 1/2;
+  }
+  .features__card--team-builder {
+    grid-row: 2/3;
+  }
+  .features__card--karma {
+    grid-row: 3/4;
+  }
+  .features__card--calculator {
+    grid-row: 4/5;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -115,19 +115,19 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
   }
-  //   .features__card {
-  //     grid-row: auto;
-  //     &--supervisor {
-  //       grid-row: 1/2;
-  //     }
-  //     &--team-builder {
-  //       grid-row: 2/3;
-  //     }
-  //     &--karma {
-  //       grid-row: 3/4;
-  //     }
-  //     &--calculator {
-  //       grid-row: 4/5;
-  //     }
-  //   }
+  .features__card {
+    grid-row: auto;
+    &--supervisor {
+      grid-row: 1/2;
+    }
+    &--team-builder {
+      grid-row: 2/3;
+    }
+    &--karma {
+      grid-row: 3/4;
+    }
+    &--calculator {
+      grid-row: 4/5;
+    }
+  }
 }
