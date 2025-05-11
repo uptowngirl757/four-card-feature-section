@@ -53,8 +53,8 @@ body {
   &__cards {
     margin-block-start: 6rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
   }
   &__card {
