@@ -21,6 +21,9 @@ body {
   margin: 0 auto;
   width: 90%;
 }
+.features__intro, .features__heading, .features__description {
+  margin-inline: auto;
+}
 .features__intro {
   margin-block-end: 2rem;
   text-align: center;
@@ -42,8 +45,8 @@ body {
 .features__cards {
   margin-block-start: 6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
   gap: 2rem;
 }
 .features__card {
@@ -81,4 +84,16 @@ body {
 .features__card-img {
   align-self: flex-end;
   margin-block: 2rem 1rem;
+}
+
+@media (max-width: 877px) {
+  body {
+    margin-block: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .features__cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
 }/*# sourceMappingURL=main.css.map */

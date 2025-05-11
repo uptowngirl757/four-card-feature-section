@@ -33,6 +33,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   width: 90%;
+  &__intro,
+  &__heading,
+  &__description {
+    margin-inline: auto;
+  }
 
   &__intro {
     margin-block-end: 2rem;
@@ -55,8 +60,8 @@ body {
   &__cards {
     margin-block-start: 6rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     gap: 2rem;
   }
   &__card {
@@ -99,4 +104,30 @@ body {
       margin-block: 2rem 1rem;
     }
   }
+}
+@media (max-width: 877px) {
+  body {
+    margin-block: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .features__cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  //   .features__card {
+  //     grid-row: auto;
+  //     &--supervisor {
+  //       grid-row: 1/2;
+  //     }
+  //     &--team-builder {
+  //       grid-row: 2/3;
+  //     }
+  //     &--karma {
+  //       grid-row: 3/4;
+  //     }
+  //     &--calculator {
+  //       grid-row: 4/5;
+  //     }
+  //   }
 }
