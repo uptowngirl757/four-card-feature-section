@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// Primary
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+// Neutral
+$grey-500: hsl(234, 12%, 34%);
+$grey-400: hsl(212, 6%, 44%);
+$white: hsl(0, 0%, 100%);
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+@mixin flexLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+body {
+  min-height: 100vh;
+  @include flexLayout;
+}
+.features {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+
+  &__intro {
+    margin-block-end: 2rem;
+    text-align: center;
+    color: $grey-400;
+  }
+  &__heading {
+    font-weight: 300;
+    font-size: 1.9rem;
+    color: $grey-500;
+  }
+  &__highlight {
+    font-weight: 700;
+    font-size: 2.2rem;
+  }
+  &__description {
+    max-width: 500px;
+    margin: 0.6rem auto;
+  }
+  &__cards {
+    margin-block-start: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 2rem;
+  }
+  &__card {
+    box-shadow: 9px 6px 10px 5px #0001;
+    padding: 2.1rem;
+    border-radius: 0.6rem;
+
+    &--supervisor {
+      border-top: 5px solid $cyan;
+      grid-row: 2 / span 2;
+    }
+    &--team-builder {
+      border-top: 5px solid $red;
+      grid-row: 1 / span 2;
+    }
+    &--karma {
+      border-top: 5px solid $orange;
+      grid-row: 3 / span 2;
+    }
+    &--calculator {
+      border-top: 5px solid $blue;
+      grid-row: 2 / span 2;
+    }
+    &-img {
+      margin-inline-start: 13rem;
+    }
+  }
+}
