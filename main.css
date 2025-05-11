@@ -10,10 +10,10 @@
 
 body {
   min-height: 100vh;
+  overflow-y: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
 }
 
 .features {
@@ -42,14 +42,17 @@ body {
 .features__cards {
   margin-block-start: 6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
 }
 .features__card {
-  box-shadow: 9px 6px 10px 5px rgba(0, 0, 0, 0.0666666667);
+  box-shadow: 0 13px 20px rgba(200, 220, 255, 0.6), 0 10px 13px rgba(200, 220, 255, 0.4), 0 0 10px rgba(200, 220, 255, 0.2);
   padding: 2.1rem;
-  border-radius: 0.6rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .features__card--supervisor {
   border-top: 5px solid hsl(180, 62%, 55%);
@@ -67,6 +70,15 @@ body {
   border-top: 5px solid hsl(212, 86%, 64%);
   grid-row: 2/span 2;
 }
+.features__card-title {
+  color: hsl(234, 12%, 34%);
+  margin-block-end: 0.6rem;
+}
+.features__card-text {
+  color: hsl(212, 6%, 44%);
+  font-size: 0.9rem;
+}
 .features__card-img {
-  margin-inline-start: 13rem;
+  align-self: flex-end;
+  margin-block: 2rem 1rem;
 }/*# sourceMappingURL=main.css.map */
